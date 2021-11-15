@@ -7,7 +7,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /*
-   Modular Scale: 
+   Typographic Grid Properties:
+      Base Font-size: 25px, 1em
+      Base Line-height: 30px, 1.2em
+      Modular Scale: 1.2
+         https://www.modularscale.com/?25&px&1.2
 
 */
 
@@ -23,9 +27,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Base Styles */
 
 html {
-   font-size: 1em;
-   font-family: futura-pt, sans-serif;
+   font-size: 25px; 
+   line-height: 30px; /* 25px * 1.2 = 30px */
+   font-family: futura-pt, "Futura PT", Arial, Helvetica, sans-serif;
    font-weight: 400;
    font-style: normal;
+   color: #0B389D;
+   background-color: #D7DCEA;
+}
+
+h2,
+h3,
+p {
+   padding-bottom: 15px;
 }
 
