@@ -80,7 +80,7 @@ figcaption {
 
 /* §2. Layout Rules */
 
-body {
+main {
    padding-left: 10%;
    padding-right: 10%;
 }
@@ -119,62 +119,102 @@ nav {
    background-color: #0B389D;
 }
 
-nav > ul {
+nav ul {
    list-style: none;
-   text-align: center;
 
    display: flex;
    flex-direction: column;
-   justify-content: center;
 }
 
-nav > ul > li {
+nav li {
    padding: 5.787px; /* 11.574px / 2 = 5.787px */
+   
 }
 
-nav > ul > li > a {
+nav a {
    color: #FCFBF9;
    text-decoration: none;
-   list-style: none;
+   display: inline-block;
+
+   padding: 5.787px; /* 11.574px / 2 = 5.787px */
 }
 
 /* §3.1.1 Navigation Module: Interactivity Styles */
 
-nav > ul > li:hover,
-nav > ul > li:focus,
-nav > ul > li:active {
+nav a:hover,
+nav a:focus,
+nav a:active{
    background-color: #D7DCEA;
    color: #0B389D;
 }
 
+/* §3.2. Contact Information Module Styles and Rules */
+.resume-header ul{
+   background-color: #2F57AB;
+   padding: 11.574px; 
+
+}
+.resume-header li,
+.resume-header a {
+   color: #FCFBF9;
+   list-style: none;
+}
+
+
 /* §4. States */
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 240px) {
+   figure {
+      display: grid;
+      grid-template-rows: 2fr 1fr;
+      grid-template-columns: auto;
+      grid-gap: 12px;
+      gap: 12px;
+    }
+    figcaption {
+      position: static;
+      grid-column: 1;
+      grid-row: 2;
+    }
+}
 
+@media screen and (min-width: 360px) {
+   figure {
+      grid-template-rows: 4fr 1fr;
+    }
 }
 
 @media screen and (min-width: 480px) {
-   nav > ul {
+   figure {
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto;
+   }
+    figcaption {
+      grid-column: 2;
+      grid-row: 1;
+   }
+
+   nav ul {
       flex-direction: row;
    }
 }
 
 
 @media screen and (min-width: 720px) {
-   body {
+   main {
       padding-left: 20%;
       padding-right: 20%;
    }
 }
 
 @media screen and (min-width: 900px) {
-   
+
 }
 
 @media screen and (min-width: 1080px) {
-   
+   main {
+      padding-left: 30%;
+      padding-right: 30%;
+   }
 }
-
-
 /* §5. Themes */
-
