@@ -12,7 +12,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
       Base Line-height: 24px, 1.2em
       Modular Scale: 1.2x
          https://www.modularscale.com/?25&px&1.2
-
 */
 
 /*
@@ -24,7 +23,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
    http://smacss.com/ 
 */
 
-/* §1. Base Styles */
+/* §1. Content Base Styles */
 
 html {
    font-size: 20px; 
@@ -56,6 +55,10 @@ h3 {
    font-style: oblique;
 }
 
+ul {
+   list-style: circle;
+}
+
 footer {
    background-color: #0B389D;
    color: #FCFBF9;
@@ -63,15 +66,20 @@ footer {
    line-height: 13.889px; /* 11.574px * 1.2 = 13.889px */
 }
 
-/* §1.1. Navigation Base Styles */
+/* §1.1. Image Base Styles */
 
-nav {
-   background-color: #0B389D;
+img {
+   display: block;
+   max-width: 100%;
 }
 
-nav > ul > li > a {
+figcaption {
+   background-color: #2F57AB;
    color: #FCFBF9;
-   text-decoration: none;
+}
+
+figcaption > p {
+   padding-bottom: 0px;
 }
 
 /* §2. Layout Rules */
@@ -91,18 +99,57 @@ p {
    padding-bottom: 10px; /* 20px / 2 = 10px */
 }
 
-nav > ul {
-   text-align: center;
-
-}
-
 footer > p {
    padding: 5.787px; /* 11.574px / 2 = 5.787px */
    text-align: center;
+   margin-top: 5.787px; /* 11.574px / 2 = 5.787px */
 }
+
 /* §3. Module Rules */
 
+/* §3.1. Navigation Module Styles */
+
+nav {
+   background-color: #0B389D;;
+}
+
+nav > ul {
+   list-style: none;
+   text-align: center;
+
+   display: flex;
+   flex-direction: row;
+}
+
+nav > ul > li > a {
+   color: #FCFBF9;
+   text-decoration: none;
+   list-style: none;
+}
+
+
 /* §4. States */
+
+@media screen and (min-width: 360px) {
+   
+}
+
+@media screen and (min-width: 480px) {
+   
+}
+
+@media screen and (min-width: 720px) {
+   
+}
+
+@media screen and (min-width: 900px) {
+   
+}
+
+@media screen and (min-width: 1080px) {
+   
+}
+
 
 /* §5. Themes */
 
