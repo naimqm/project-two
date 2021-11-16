@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 /* stylelint-disable */
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding-bottom:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /*
@@ -54,6 +54,11 @@ h3 {
    line-height: 28.8px; /* 24px * 1.2 = 28.8px */
 }
 
+nav {
+   background-color: #0B389D;
+   color: #FCFBF9
+}
+
 footer {
    background-color: #0B389D;
    color: #FCFBF9;
@@ -63,23 +68,27 @@ footer {
 /* §2. Layout Rules */
 
 h1 {
-   padding: 17.28px; /* 34.56px / 2 = 17.28px */
+   padding-bottom: 17.28px; /* 34.56px / 2 = 17.28px */
    text-align: center;
 }
 
 h2 {
-   padding: 14.4px; /* 28.8px / 2 = 14.4px */
+   padding-bottom: 14.4px; /* 28.8px / 2 = 14.4px */
 }
 
 h3 {
-   padding: 12px; /* 24px / 2 = 12px */
+   padding-bottom: 12px; /* 24px / 2 = 12px */
 }
 
 p {
-   padding: 10px; /* 20px / 2 = 10px */
+   padding-bottom: 10px; /* 20px / 2 = 10px */
 }
 
-footer {
+nav > ul {
+   text-align: center;
+}
+
+footer > p {
    padding: 5.787px; /* 11.574px / 2 = 5.787px */
    text-align: center;
 }
