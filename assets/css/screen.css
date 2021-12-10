@@ -224,15 +224,15 @@ p {
 }
 
 footer > p {
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
   text-align: center;
-  margin-top: 5.787px; /* 11.574px / 2 = 5.787px */
+  margin-top: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 /* §2.1. Image Layout Rules */
 
 figcaption > p {
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 /* §3. Module Rules */
@@ -251,7 +251,7 @@ nav ul {
 }
 
 nav li {
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 nav a {
@@ -259,7 +259,7 @@ nav a {
   text-decoration: none;
   display: inline-block;
 
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 /* §3.1.1 Navigation Module: Interactivity Styles */
