@@ -274,7 +274,7 @@ nav a:active {
 /* §3.2. Contact Information Module Styles and Rules */
 .resume-header ul {
   background-color: #2f57ab;
-  padding: 11.574px;
+  padding: 0.75em; /* 12px / 16px == 0.75em */
 }
 .resume-header li,
 .resume-header a {
@@ -289,8 +289,8 @@ nav a:active {
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: auto;
-    grid-gap: 12px;
-    gap: 12px;
+    grid-gap: 0.75em; /* 12px / 16px == 0.75em */
+    gap: 0.75em; /* 12px / 16px == 0.75em */
   }
   figcaption {
     position: static;
