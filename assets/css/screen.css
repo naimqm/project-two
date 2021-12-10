@@ -133,10 +133,9 @@ table {
 
 /*
    Typographic Grid Properties:
-      Base Font-size: 20px, 1em
-      Base Line-height: 24px, 1.2em
+      Base Font-size: 1em, 16px
       Modular Scale: 1.2x
-         https://www.modularscale.com/?25&px&1.2
+        https://www.modularscale.com/?16&px&1.2
 */
 
 /*
@@ -151,8 +150,8 @@ table {
 /* §1. Content Base Styles */
 
 html {
-  font-size: 20px;
-  line-height: 24px; /* 20px * 1.2 = 24px */
+  font-size: 1em; /* 16px / 16px == 1em */
+  line-height: 1.25em; /* 20px / 16px == 1.25em */
   font-family: futura-pt, "Futura PT", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -161,22 +160,22 @@ html {
 }
 
 h1 {
-  font-size: 34.56px; /* 20px * (1.2)³ = 34.56px */
-  line-height: 41.472px; /* 34.56px * 1.2 = 43.2px */
+  font-size: 1.5em; /* 24px / 16px == 1.5em */
+  line-height: 1.625em; /* 26px / 16px == 1.625em */
   font-weight: 500;
   font-style: normal;
   color: #0b389d;
 }
 
 h2 {
-  font-size: 28.8px; /* 20px * (1.2)² = 28.8px */
-  line-height: 34.65px; /* 28.8px * 1.2 = 34.65px */
+  font-size: 1.375em; /* 22px / 16px == 1.375em */
+  line-height: 1.5em; /* 24px / 16px == 1.5em */
   font-weight: 700;
 }
 
 h3 {
-  font-size: 20px; /* 20px * 1.2 = 24px */
-  line-height: 24px; /* 24px * 1.2 = 28.8px */
+  font-size: 1.25em; /* 20px / 16px == 1.25em */
+  line-height: 1.375em; /* 22px / 16px == 1.375em */
   font-style: oblique;
 }
 
@@ -187,8 +186,8 @@ ul {
 footer {
   background-color: #0b389d;
   color: #fcfbf9;
-  font-size: 11.574px; /* 20px / (1.2)³ = 11.574px */
-  line-height: 13.889px; /* 11.574px * 1.2 = 13.889px */
+  font-size: 0.75em; /* 12px / 16px == 0.75em */
+  line-height: 0.875em; /* 14px / 16px == 0.875em */
 }
 
 /* §1.1. Image Base Styles */
@@ -210,30 +209,30 @@ main {
   padding-right: 10%;
 }
 h1 {
-  padding-bottom: 17.28px; /* 34.56px / 2 = 17.28px */
-  padding-top: 17.28px; /* 34.56px / 2 = 17.28px */
-  text-align: center;
+  padding-bottom: 0.75em; /* 12px / 16px == 0.75em */
+  padding-top: 0.75em; /* 12px / 16px == 0.75em */
+  text-align: center; 
 }
 
 h2 {
-  padding-bottom: 14.4px; /* 28.8px / 2 = 14.4px */
-  padding-top: 14.4px; /* 28.8px / 2 = 14.4px */
+  padding-bottom: 0.6875em; /* 11px / 16px == 0.6875em */
+  padding-top: 0.6875em; /* 11px / 16px == 0.6875em */
 }
 
 p {
-  padding-bottom: 10px; /* 20px / 2 = 10px */
+  padding-bottom: 0.625em; /* 10px / 16px == 0.625em */
 }
 
 footer > p {
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
   text-align: center;
-  margin-top: 5.787px; /* 11.574px / 2 = 5.787px */
+  margin-top: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 /* §2.1. Image Layout Rules */
 
 figcaption > p {
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 /* §3. Module Rules */
@@ -252,7 +251,7 @@ nav ul {
 }
 
 nav li {
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 nav a {
@@ -260,7 +259,7 @@ nav a {
   text-decoration: none;
   display: inline-block;
 
-  padding: 5.787px; /* 11.574px / 2 = 5.787px */
+  padding: 0.375em; /* 6px / 16px == 0.375em */
 }
 
 /* §3.1.1 Navigation Module: Interactivity Styles */
@@ -275,7 +274,7 @@ nav a:active {
 /* §3.2. Contact Information Module Styles and Rules */
 .resume-header ul {
   background-color: #2f57ab;
-  padding: 11.574px;
+  padding: 0.75em; /* 12px / 16px == 0.75em */
 }
 .resume-header li,
 .resume-header a {
@@ -290,8 +289,8 @@ nav a:active {
     display: grid;
     grid-template-rows: 2fr 1fr;
     grid-template-columns: auto;
-    grid-gap: 12px;
-    gap: 12px;
+    grid-gap: 0.75em; /* 12px / 16px == 0.75em */
+    gap: 0.75em; /* 12px / 16px == 0.75em */
   }
   figcaption {
     position: static;
